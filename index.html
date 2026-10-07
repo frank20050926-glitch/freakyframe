@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FREAKYFRAME — Frank Lin｜影像・攝影・副導・系統工程</title>
+<meta name="description" content="Frank Lin — 影像工作者與系統工程師。MV 導演助理、舞蹈與舞台攝影、Partiii Dance Studio 攝影統籌、自架 NAS/Docker 與內部系統開發。台北。">
+<meta property="og:title" content="FREAKYFRAME — Frank Lin">
+<meta property="og:description" content="影像・攝影・副導・系統工程">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header id="nav">
+  <a class="brand" href="#top">FREAKYFRAME</a>
+  <nav>
+    <a href="#works">作品</a>
+    <a href="#stills">攝影</a>
+    <a href="#eng">工程</a>
+    <a href="#about">簡歷</a>
+    <a href="#contact">聯絡</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="hero">
+  <div class="hero-bg" style="background-image:url('assets/gallery/mv-06.jpg')"></div>
+  <div class="hero-inner">
+    <p class="kicker">TAIPEI · IMAGE / PHOTOGRAPHY / SYSTEMS</p>
+    <h1>FREAKY<br>FRAME</h1>
+    <p class="hero-sub">影像工作者<span class="dot">·</span>系統工程師<span class="dot">·</span>Frank Lin</p>
+  </div>
+  <a class="scroll" href="#intro">SCROLL</a>
+</section>
+
+<!-- ============ INTRO ============ -->
+<section id="intro" class="intro reveal">
+  <div class="wrap">
+    <p class="lead">
+      我在影像裡工作——從音樂錄影帶的<b>副導與導演助理</b>，到<b>舞台與街舞的現場攝影</b>，
+      再到<b>行為藝術的策展</b>。習慣順著現場的光走，讓畫面靠近電影，而不是紀錄。
+    </p>
+    <p class="lead2">
+      我也自己把系統搭起來：<b>NAS、Docker、內部工具，以及 AI 工作流</b>。拍攝現場與伺服器，
+      是同一套標準——穩定、可重複、能交付。
+    </p>
+    <div class="stats">
+      <div><span>DIRECTOR</span><b>導演組</b><i>副導・導演助理・現場統籌</i><em>腳本撰寫 ・ 影像前製 ・ 分鏡</em></div>
+      <div><span>CAMERA</span><b>攝影</b><i>電影攝影・舞台・現場光</i><em>構圖 ・ 鏡位 ・ 彩色硬光 ・ 劇照</em></div>
+      <div><span>POST / DIT</span><b>後期・DIT</b><i>剪接・順剪・素材管理</i><em>Timecode ・ 調光 ・ 交付</em></div>
+      <div><span>SYSTEMS</span><b>系統・AI</b><i>自架服務・自動化・後端</i><em>NAS ・ Docker ・ AI Agent ・ 工作流</em></div>
+      <div><span>AWARD</span><b>策展・獲獎</b><i>《青視》行為藝術展</i><em>Breath 入選 2023 亞洲國際兒童電影節</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKS ============ -->
+<section id="works" class="works">
+  <div class="wrap">
+    <h2 class="sec"><span>01</span>音樂錄影帶</h2>
+    <p class="sec-sub">導演助理 ／ 剪接後期</p>
+    <div class="vgrid" id="mvgrid"></div>
+
+    <h2 class="sec"><span>02</span>舞蹈影像</h2>
+    <p class="sec-sub">現場拍攝 ／ 形象片</p>
+    <div class="vgrid" id="dancegrid"></div>
+    <p class="sec-note">Partiii Dance Studio 攝影統籌——舞蹈教室官方帳號之影像皆由其拍攝。</p>
+
+    <h2 class="sec"><span>03</span>商案</h2>
+    <p class="sec-sub">政府標案 ／ 音樂會影像</p>
+    <div class="vgrid two" id="comgrid"></div>
+
+    <h2 class="sec"><span>04</span>策展 與 獲獎</h2>
+    <div class="vgrid two" id="artgrid"></div>
+  </div>
+</section>
+
+<!-- ============ STILLS ============ -->
+<section id="stills" class="stills">
+  <div class="wrap">
+    <h2 class="sec"><span>05</span>攝影</h2>
+    <p class="sec-sub">人像 · 舞蹈 · 舞台 · 運動 · 實驗片 · <span id="galcount"></span> 幀</p>
+    <div class="filters" id="filters">
+      <button class="on" data-f="ALL">全部</button>
+      <button data-f="PORTRAIT">人像</button>
+      <button data-f="DANCE">舞蹈</button>
+      <button data-f="STAGE">舞台</button>
+      <button data-f="SPORTS">運動</button>
+      <button data-f="FILM">實驗片</button>
+    </div>
+    <div class="mosaic" id="mosaic"></div>
+  </div>
+</section>
+
+<!-- ============ ENGINEERING ============ -->
+<section id="eng" class="eng">
+  <div class="wrap">
+    <h2 class="sec"><span>06</span>工程 與 自動化</h2>
+    <p class="sec-sub">自架服務 · 內部系統 · AI 工作流</p>
+    <div class="egrid">
+      <div class="ecard rv">
+        <b>後端與系統</b>
+        <p>從需求分析到 API 與系統邏輯，開發 ERP、審片平台、器材租借等內部工具並長期維運。</p>
+      </div>
+      <div class="ecard rv" style="--d:80ms">
+        <b>AI Agent 工作流</b>
+        <p>設計多 Agent 分工、派發、執行與回報的流程；整合 Ollama、OpenRouter、Qwen 等 LLM 服務。</p>
+      </div>
+      <div class="ecard rv" style="--d:160ms">
+        <b>自動化</b>
+        <p>把重複性工作轉成自動化流程：專案建立、檔案整理、命名、任務派發與後製流程。</p>
+      </div>
+      <div class="ecard rv" style="--d:240ms">
+        <b>本地 AI 基礎設施</b>
+        <p>Windows／WSL2／Docker／NVIDIA GPU 環境建置，部署 Local LLM、Open WebUI 等服務。</p>
+      </div>
+    </div>
+    <p class="eng-note">※ 部分系統為公司專案，內容以對方要求為準，不公開細節。</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="about-pic reveal">
+      <img src="assets/work/portrait.jpg" alt="Frank Lin">
+    </div>
+    <div class="about-txt">
+      <h2 class="sec"><span>07</span>簡歷</h2>
+      <h3>Frank Lin<span class="zh">影像工作者 ／ 系統工程師 ｜ 台灣台北</span></h3>
+      <p class="role">國立臺北藝術大學電影創作學系 就讀（主修電影攝影）</p>
+
+      <p class="bio">
+        目前就讀<b>國立臺北藝術大學電影創作學系，主修電影攝影</b>。自 2019 年起投入攝影與影像工作，
+        累積約七年實務經驗，工作範圍涵蓋 MV、廣告、品牌形象、短影音、活動紀錄與劇情影像。
+      </p>
+      <p class="bio">
+        曾任<b>副導、導演助理、DIT、場記、Timecode</b>與後期相關職務，熟悉劇組現場運作與完整製作流程；
+        現任 <b>Partiii Dance Studio 攝影統籌</b>。鏡頭之外，自架 NAS 與 Docker 服務，
+        開發 ERP、審片平台、器材租借系統，並把 <b>AI 工作流</b>接進影像製作流程。
+      </p>
+
+      <div class="cv">
+        <h4>經歷</h4>
+        <ul>
+          <li><b>音樂錄影帶</b>導演助理 — 陳勢安、徐暐翔、閻奕格、HAKU、LUVSSI、莉森、俊希、Rakuten Girls</li>
+          <li><b>後期・剪接</b>陳勢安《遼闊》</li>
+          <li><b>舞蹈影像・攝影</b>臺大盃第 32 屆熱舞大賽決賽、Angel 舞蹈形象片</li>
+          <li><b>攝影統籌</b>Partiii Dance Studio（官方帳號之影像皆由其拍攝）</li>
+          <li><b>商案・攝影師</b>國軍音樂會影像 — 紀念二戰暨抗戰勝利 80 週年、黃埔軍校建軍百年</li>
+          <li><b>實驗片・攝影</b>北藝大電影創作學系 實驗片作品</li>
+          <li><b>策展</b>《青視》行為藝術展</li>
+        </ul>
+
+        <h4>獲獎</h4>
+        <ul>
+          <li>《Breath》— 2023 亞洲國際兒童電影節 入選</li>
+        </ul>
+
+        <h4>專業・影像</h4>
+        <ul>
+          <li><b>電影攝影</b>構圖 ・ 鏡位 ・ 焦段 ・ 光線 ・ 運鏡與視覺風格</li>
+          <li><b>MV／商業影像</b>前期視覺設計 ・ 分鏡 ・ 場景規劃 ・ 拍攝執行至後期成片</li>
+          <li><b>導演組</b>副導 ・ 導演助理 ・ 場記 ・ 跨部門協調</li>
+          <li><b>DIT／後期</b>素材管理 ・ Timecode ・ 順剪 ・ 剪接與後期交接</li>
+          <li><b>AI 視覺製作（研究中）</b>生成式 AI ・ 角色一致性 ・ 分鏡與視覺開發</li>
+        </ul>
+
+        <h4>專業・工程</h4>
+        <ul>
+          <li><b>後端開發</b>API ・ 系統邏輯 ・ 內部工具串接</li>
+          <li><b>AI Agent／自動化</b>多 Agent 工作流 ・ LLM 整合 ・ 流程自動化</li>
+          <li><b>本地 AI 基礎設施</b>Docker ・ WSL2 ・ GPU ・ Local LLM 部署</li>
+          <li><b>製作工具</b>Premiere JSX ・ UXP Plugin ・ Shell Script</li>
+        </ul>
+      </div>
+
+      <div class="about-links">
+        <a href="https://www.instagram.com/freakyfrank_0926/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.instagram.com/partiiient_official/" target="_blank" rel="noopener">Partiii Dance Studio 官方 IG（非個人帳號）↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>與我合作<span class="dot">·</span></h2>
+    <p>MV ／ 舞蹈影像 ／ 平面攝影 ／ 影像統籌 ／ 系統與自動化</p>
+    <div class="cta">
+      <a class="btn" href="mailto:anikifrank0926@gmail.com">寄信給我</a>
+      <a class="btn ghost" href="https://www.instagram.com/freakyfrank_0926/" target="_blank" rel="noopener">Instagram</a>
+      <a class="btn ghost" href="https://www.instagram.com/partiiient_official/" target="_blank" rel="noopener">Partiii IG</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>FREAKYFRAME STUDIO</span>
+  <span>© <span id="yr"></span> Frank Lin · Taipei · <a href="mailto:anikifrank0926@gmail.com">anikifrank0926@gmail.com</a></span>
+</footer>
+
+<div class="lb" id="lb">
+  <button id="lbclose">✕</button>
+  <img id="lbimg" src="" alt="">
+  <p id="lbcap"></p>
+</div>
+
+<script src="gallery-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
